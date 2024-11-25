@@ -1,0 +1,68 @@
+/* Aplicamos un estilo al body en COLUMNAS DE 2 */
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #f4f4f9;  Fondo suave y claro */
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+	font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    /* color: #333; */
+    color: #ffffff;
+}
+h2 {
+	font-size: 60px;
+    text-align: center;
+    margin-top: 10px;
+    /* color: #333; */
+    color: #fe0000;
+}
+
+#lista_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    max-width: 1200px; /* Limitar el ancho total */
+}
+
+#lista_productos li {
+    background-color: #ffffff; /* Fondo blanco para los productos */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 40px); /* Para dos productos por fila */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista_productos li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#lista_productos li h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#lista_productos li p {
+    font-size: 1em;
+    color: #666;
+}
